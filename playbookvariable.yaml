@@ -1,0 +1,11 @@
+- hosts: linux
+  vars:
+    test: welcome2anisble
+    Test: Welcome
+  tasks:
+  - name: print variable
+    debug:
+      msg: "{{ test }}"
+  - name: print Test Variable
+    debug:
+      msg: "{{ Test }}"
